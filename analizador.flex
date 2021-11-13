@@ -14,7 +14,8 @@
 "no"|"NO"|"No"	{yylval.boolean = 0;return B;}
 "cuadro"|"Cuadro"|"CUADRO"	{return CUADRO;}
 "relleno"|"Relleno"|"RELLENO"	{return RELLENO;}
-"linea"|"Linea"|"LINEA"		printf("Palabra reservada: Linea\n");
+"linea"|"Linea"|"LINEA"		{return LINEA;}
+"triangulo"|"Triangulo"|"TRIANGULO"	{return TRIANGULO;}
 "color"|"Color"|"COLOR" {return COLOR;}
 "redondo"|"Redondo"|"REDONDO"	{return REDONDO;}
 "asignar"|"Asignar"|"ASIGNAR"	printf("Palabra reservada: Asignar\n");
